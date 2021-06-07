@@ -1,0 +1,33 @@
+
+body {
+  background-color: #0B151E;
+  color: gray;
+}
+
+h1 {
+
+  /* background-color: gray; */
+  font-size: 40px;
+  font-weight: bold;
+
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card{
+  background-color: #262B2F;
+  border-radius: 15px;
+}
+
+#mainflex{
+  flex-direction: row;
+}
+
+a{
+  color: white;
+}
