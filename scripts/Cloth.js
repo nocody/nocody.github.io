@@ -171,6 +171,8 @@ class Constraint {
   }
 
   draw () {
+    // let c = getRandomColorHex()
+    // ctx.strokeStyle = c
     ctx.moveTo(this.p1.x, this.p1.y)
     ctx.lineTo(this.p2.x, this.p2.y)
   }
@@ -179,11 +181,11 @@ class Constraint {
 class Cloth {
   constructor () {
     this.points = []
-
     let startX = canvas.width / 2 - clothX * spacing / 2
-
     for (let y = 0; y <= clothY; y++) {
       for (let x = 0; x <= clothX; x++) {
+        // let c = getRandomColorHex()
+        // ctx.strokeStyle = c
         let point = new Point(startX + x * spacing, 20 + y * spacing)
         y === 0 && point.pin(point.x, point.y)
         x !== 0 && point.attach(this.points[this.points.length - 1])
@@ -227,6 +229,15 @@ canvas.onmousedown = (e) => {
   mouse.button = e.which
   mouse.down = true
   setMouse(e)
+}
+
+function getRandomColorHex() {
+    const colorLetters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += colorLetters[Math.floor(Math.random() * 16)];
+    }
+    return color;
 }
 
 canvas.onmousemove = setMouse
