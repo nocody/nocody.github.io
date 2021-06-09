@@ -27,7 +27,7 @@ let bounce = 0.5
 // canvas.height = window.innerHeight
 
 // ctx.strokeStyle = '#555'
-ctx.strokeStyle = '#550000'
+ctx.strokeStyle = '#0F434F'
 ctx.lineWidth = 8;
 let mouse = {
   cut: 8,
@@ -252,6 +252,7 @@ let cloth = new Cloth();
 
 (function update (time) {
   ctx.clearRect(0, 0, canvas.width, canvas.height)
+
   // ctx.fillRect(0, 0, canvas.width, canvas.height)
 
   cloth.update(0.016)
