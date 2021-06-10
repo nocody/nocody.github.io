@@ -4,7 +4,9 @@ body {
   color: gray;
   font-family: 'Questrial', sans-serif;
 }
-
+#landing{
+  text-align: center;
+}
 h1 {
 
   /* background-color: gray; */
@@ -50,9 +52,9 @@ a{
   margin: auto;
 }
 
-div{
+/* div{
   text-align: center;
-}
+} */
 
 #overlay {
   position: fixed; /* Sit on top of the page content */
